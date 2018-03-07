@@ -4,17 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Layout Example</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/960gs/0/960.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<style type="text/css">
-		@font-face {
-			font-family: 'QuicksandBook';
-			src: url('fonts/Quicksand_Book-webfont.eot');
-			src: url('fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'), 
-				url('fonts/Quicksand_Book-webfont.woff') format('woff'),
-				url('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
-				url('fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
 		body {
 			color: #ffffff;
 			background: #413f3b;
@@ -22,6 +13,8 @@
 			font-size: 90%;
 			margin: 0px;
 			text-align: center;
+			font-weight: normal;
+			font-style: normal;
 		}
 		a {
 			color: #b5c1ad;
@@ -31,7 +24,7 @@
 			color: #ffffff;
 		}
 		.header {
-			background-image: url("assets/images/bg-header.png");
+			background-image: url("assets/images/bg-header.jpg");
 			padding: 0px;
 			height: 100px;
 			position: fixed;
@@ -41,14 +34,14 @@
 		}
 		.nav {
 			float: right;
-			font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+			font-family: Quicksand, Helvetica, Arial, sans-serif;
 			padding: 45px 0px 0px 0px;
 			text-align: right;
 		}
 		.wrapper {
 			width: 960px;
 			margin: 0px auto;
-			background-image: url("assets/images/bg-triangle.png");
+			background-image: url("assets/images/triangle.png");
 			background-repeat: no-repeat;
 			background-position: 0px 0px;
 			text-align: left;
@@ -57,7 +50,7 @@
 			margin-bottom: 20px;
 		}
 		h1, h2 {
-			font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+			font-family: Quicksand, Helvetica, Arial, sans-serif;
 			font-weight: normal;
 			text-transform: uppercase;
 		}
@@ -85,11 +78,13 @@
 		.more-articles {
 			border-top: 1px solid #ffffff;
 			padding: 10px;
+			text-align: left;
 		}
 		.more-articles p {
 			border-bottom: 1px solid #807c72;
 			padding: 5px 0px 15px 0px;
 			font-size: 80%;
+			text-align: left;
 		}
 		.footer {
 			clear: both;
@@ -112,7 +107,7 @@
 		<div class="container_12">
 			<div class="grid_5">
 				<img src="assets/images/pedal_logo.png" alt="Pedal Faster - The Modern Bicycle Magazine" width="216" height="37" class="logo"/>
-				<img src="" alt="" width="116" height="100"/> 
+				<img src="assets/images/bg-triangle.png" alt="" width="116" height="100"/> 
 			</div>
 			<div class="nav grid_7">
 				<a href="">home</a> / <a href="">news</a> / <a href="">archives</a> / <a href="">about</a> / <a href="">contact</a>
@@ -131,7 +126,7 @@
 			</div>
 		</div>
 		<div class="more-articles container_12">
-			<h2 class="grid_12"><a href="">More Articles</a></h2>
+			<h2 class="grid_12"><a href="" class="left">More Articles</a></h2>
 			<div class="grid_3">
 				<img src="assets/images/road.jpg" alt="The Road Ahead" width="220" height="125"/>
 				<p><a href="">On the Road: From the fixed gear fanatic's point of view</a></p>
